@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <div class="form">
+            <fieldset>
+                <label for="nasc">Ano de nascimento:</label>
+                <input type="number" name="nasc" id="nasc" placeholder="Ex: 1993" min="0">
+            </fieldset>
+            <fieldset class="geners">
+                <p>Escolha o gênero:</p>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="gen" id="masc" checked> <span class="ajuste">kkkkkkk</span>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="gen" id="fem">
+            </fieldset>
+            <input type="button" value="Verificar" class="btn" onclick="verificar()">
+        </div>
+        <span id="res"></span>
+    </main>
+    <footer>
+        <p>&copy;Developed by: Alex Santos</p>
+    </footer>
+    
+</body>
+</html>
